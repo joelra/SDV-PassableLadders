@@ -61,7 +61,6 @@ namespace PassableLadders
         {
             if (Game1.currentLocation is MineShaft)
             {
-                this.Monitor.Log("Location is MineShaft and CheckAreaAroundPlayerForLadder called", LogLevel.Debug);
                 CheckAdjacentTilesForLadder();
             }
         }
@@ -75,7 +74,6 @@ namespace PassableLadders
         {
             if(Game1.currentLocation is MineShaft)
             {
-                this.Monitor.Log("Location is MineShaft and CreatedStairs called", LogLevel.Debug);
                 CheckAdjacentTilesForLadder();
             }
         }
